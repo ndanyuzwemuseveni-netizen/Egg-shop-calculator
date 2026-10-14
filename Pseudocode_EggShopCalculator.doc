@@ -1,0 +1,49 @@
+EGG SHOP SALES CALCULATOR - PSEUDOCODE
+
+Name: SHIMIRWA ALDA MICHAELLA
+Registration Number: 25/BIT/BU/R/0037
+Campus: Bugema Main campus
+
+ALGORITHM:
+1. DECLARE variables:
+   - eggs_in_stock (integer)
+   - eggs_purchased (integer)
+   - price_per_egg (integer)
+   - amount_paid (integer)
+   - total_bill (integer)
+   - change (integer)
+   - remaining_stock (integer)
+   - complete_trays (integer)
+   - loose_eggs (integer)
+
+2. DISPLAY "=== LOCAL EGG SHOP SALES CALCULATOR ==="
+
+3. INPUT:
+   - READ eggs_in_stock from user
+   - READ eggs_purchased from user
+   - READ price_per_egg from user
+   - READ amount_paid from user
+
+4. CALCULATE:
+   - total_bill = eggs_purchased * price_per_egg
+   - change = amount_paid - total_bill
+   - complete_trays = eggs_purchased / 30
+   - loose_eggs = eggs_purchased % 30
+
+5. UPDATE stock:
+   - remaining_stock = eggs_in_stock
+   - remaining_stock = remaining_stock - eggs_purchased
+
+6. DISPLAY receipt:
+   - PRINT header "EGG SHOP RECEIPT"
+   - PRINT eggs_purchased
+   - PRINT price_per_egg
+   - PRINT total_bill
+   - PRINT amount_paid
+   - PRINT change
+   - PRINT complete_trays
+   - PRINT loose_eggs
+   - PRINT eggs_in_stock
+   - PRINT remaining_stock
+
+7. END program
